@@ -20,17 +20,6 @@ function App() {
       {/* Navigation */}
       <nav className="bg-white py-4 px-6 md:px-12 flex items-center justify-between shadow-sm sticky top-0 z-50">
         <div className="flex items-center">
-          <div className="bg-green-700 rounded-full p-2 mr-2">
-            <motion.div
-              initial={{ rotate: 0 }}
-              animate={{ rotate: 360 }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-            >
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7 21q-.825 0-1.413-.588T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.588 1.413T17 21H7ZM17 6H7v13h10V6ZM9 17h2V8H9v9Zm4 0h2V8h-2v9ZM7 6v13V6Z" />
-              </svg>
-            </motion.div>
-          </div>
           <motion.h1 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -61,13 +50,13 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-12 px-6 md:px-12 md:flex items-center justify-between">
+      <section className="relative py-12 px-6 ml-10 mt-10 md:px-12 md:flex items-center justify-between">
         <div className="md:w-1/2">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold text-green-800 mb-4"
+            className="text-4xl md:text-7xl font-bold text-green-800 mb-4"
           >
             Swachh Seva:<br />
             Garbage<br />
