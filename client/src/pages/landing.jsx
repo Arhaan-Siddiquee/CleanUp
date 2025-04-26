@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaMapMarkerAlt, FaChartLine, FaBell, FaStar, FaClipboardList, FaUsers, FaChartBar } from 'react-icons/fa';
 import { MapPin, CheckCircle, Users, Upload, Map, Bell, Star, ClipboardList, BarChart } from 'lucide-react';
+import logo from "../../public/logo.png"; 
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -19,7 +20,8 @@ function App() {
     <div className="min-h-screen bg-green-100">
       {/* Navigation */}
       <nav className="bg-white py-4 px-6 md:px-12 flex items-center justify-between shadow-sm sticky top-0 z-50">
-        <div className="flex items-center">
+        <div className="flex items-center ">
+          <img src={logo} className=" ml-9 w-10 h-10 mr-2" />
           <motion.h1 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -51,12 +53,12 @@ function App() {
 
       {/* Hero Section */}
       <section className="relative py-12 px-6 ml-10 mt-10 md:px-12 md:flex items-center justify-between">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 ml-8">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-4xl md:text-7xl font-bold text-green-800 mb-4"
+            className="text-4xl md:text-7xl font-bold  text-green-800 mb-4"
           >
             Swachh Seva:<br />
             Garbage<br />
@@ -88,7 +90,7 @@ function App() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="md:w-1/2 mt-10 md:mt-0"
+          className="md:w-1/2 mt-10 md:mt-0 mr-10"
         >
           {/* Placeholder for illustration as per image layout */}
           <div className="relative">
